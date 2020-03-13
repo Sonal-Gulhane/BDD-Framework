@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="46.877874">
+<testcase classname="Enter contact details on GCE contact Page" name="Mandatory field validation on Contact Page" time="24.470596">
+<system-out><![CDATA[Given User open the browser.................................................passed
+When User navigates to GCE homepage.........................................passed
+When User Clicks on Contact Menu on HomePage................................passed
+Then enter details in contact form "Rajni Ranjan","rajni.ranjan@clairvoyantsoft.com","4322305947","Clairvoyant","Other".passed
+Then user clicks on submit button...........................................passed
+Then validate the error message "This field is required."...................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Enter contact details on GCE contact Page" name="Mandatory field validation on Contact Page 2" time="22.407278">
+<system-out><![CDATA[Given User open the browser.................................................passed
+When User navigates to GCE homepage.........................................passed
+When User Clicks on Contact Menu on HomePage................................passed
+Then enter details in contact form "Test name","abc@gmail.com","1234567890","abc company","Investor Relations".passed
+Then user clicks on submit button...........................................passed
+Then validate the error message "This field is required."...................passed
+Then close the browser......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

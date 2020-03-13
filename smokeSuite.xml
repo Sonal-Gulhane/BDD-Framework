@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Smoke Suite">
+    <parameter name="Screenshot" value="yes"></parameter>
+  <!--  <parameter name="platform" value="local"></parameter>
+    <parameter name="datafilename" value="testData.xlsx"></parameter>
+    <parameter name="BrowserType" value="chrome"></parameter>-->
+    <test name="GCU UI : Home Page menu Test Cases">
+        <classes>
+            <class name="com.LMS.Runner.TestRunner"/>
+        </classes>
+    </test>
+
+</suite>

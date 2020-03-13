@@ -1,0 +1,165 @@
+[
+  {
+    "source": "^validate the error message \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "validate the error message \"This field is required.\"",
+        "aggregatedDurations": {
+          "average": 0.06271465,
+          "median": 0.06271465
+        },
+        "durations": [
+          {
+            "duration": 0.0618261,
+            "location": "SmokeFeature/GCEcontactPageFeature.feature:13"
+          },
+          {
+            "duration": 0.0636032,
+            "location": "SmokeFeature/GCEcontactPageFeature.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User navigates to GCE homepage$",
+    "steps": [
+      {
+        "name": "User navigates to GCE homepage",
+        "aggregatedDurations": {
+          "average": 9.0712906,
+          "median": 9.0712906
+        },
+        "durations": [
+          {
+            "duration": 9.1521064,
+            "location": "SmokeFeature/GCEcontactPageFeature.feature:5"
+          },
+          {
+            "duration": 8.9904748,
+            "location": "SmokeFeature/GCEcontactPageFeature.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User Clicks on Contact Menu on HomePage$",
+    "steps": [
+      {
+        "name": "User Clicks on Contact Menu on HomePage",
+        "aggregatedDurations": {
+          "average": 0.0840089,
+          "median": 0.0840089
+        },
+        "durations": [
+          {
+            "duration": 0.0914157,
+            "location": "SmokeFeature/GCEcontactPageFeature.feature:10"
+          },
+          {
+            "duration": 0.0766021,
+            "location": "SmokeFeature/GCEcontactPageFeature.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^close the browser$",
+    "steps": [
+      {
+        "name": "close the browser",
+        "aggregatedDurations": {
+          "average": 0.75648145,
+          "median": 0.75648145
+        },
+        "durations": [
+          {
+            "duration": 0.7652068,
+            "location": "SmokeFeature/GCEcontactPageFeature.feature:14"
+          },
+          {
+            "duration": 0.7477561,
+            "location": "SmokeFeature/GCEcontactPageFeature.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^enter details in contact form \"(.*)\",\"(.*)\",\"(.*)\",\"(.*)\",\"(.*)\"$",
+    "steps": [
+      {
+        "name": "enter details in contact form \"Rajni Ranjan\",\"rajni.ranjan@clairvoyantsoft.com\",\"4322305947\",\"Clairvoyant\",\"Other\"",
+        "aggregatedDurations": {
+          "average": 0.8201077,
+          "median": 0.8201077
+        },
+        "durations": [
+          {
+            "duration": 0.8201077,
+            "location": "SmokeFeature/GCEcontactPageFeature.feature:11"
+          }
+        ]
+      },
+      {
+        "name": "enter details in contact form \"Test name\",\"abc@gmail.com\",\"1234567890\",\"abc company\",\"Investor Relations\"",
+        "aggregatedDurations": {
+          "average": 0.6838643,
+          "median": 0.6838643
+        },
+        "durations": [
+          {
+            "duration": 0.6838643,
+            "location": "SmokeFeature/GCEcontactPageFeature.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^user clicks on submit button$",
+    "steps": [
+      {
+        "name": "user clicks on submit button",
+        "aggregatedDurations": {
+          "average": 2.0970925,
+          "median": 2.0970925
+        },
+        "durations": [
+          {
+            "duration": 2.1053521,
+            "location": "SmokeFeature/GCEcontactPageFeature.feature:12"
+          },
+          {
+            "duration": 2.0888329,
+            "location": "SmokeFeature/GCEcontactPageFeature.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^User open the browser$",
+    "steps": [
+      {
+        "name": "User open the browser",
+        "aggregatedDurations": {
+          "average": 10.6153629,
+          "median": 10.6153629
+        },
+        "durations": [
+          {
+            "duration": 11.4745815,
+            "location": "SmokeFeature/GCEcontactPageFeature.feature:4"
+          },
+          {
+            "duration": 9.7561443,
+            "location": "SmokeFeature/GCEcontactPageFeature.feature:4"
+          }
+        ]
+      }
+    ]
+  }
+]

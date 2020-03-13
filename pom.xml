@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.LMS</groupId>
+    <artifactId>com.gce.lms.cucumbertest</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>com.gce.lms.cucumbertest</name>
+    <!-- FIXME change it to the project's website -->
+    <url>http://www.example.com</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.8.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-jvm-deps</artifactId>
+            <version>1.0.5</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>1.1.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>1.2.5</version>
+            <scope>compile</scope>
+        <!--    <exclusions>
+                <exclusion>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                </exclusion>
+            </exclusions>-->
+        </dependency>
+        <!-- this is for pdf report fom runner class -->
+        <dependency>
+            <groupId>com.github.mkolisnyk</groupId>
+            <artifactId>cucumber-runner</artifactId>
+            <version>1.3.3</version>
+        </dependency>
+        <!-- to convert HTMl to PDF -->
+        <dependency>
+            <groupId>io.woo</groupId>
+            <artifactId>htmltopdf</artifactId>
+            <version>1.0.5</version>
+        </dependency>
+        <dependency>
+            <groupId>net.masterthought</groupId>
+            <artifactId>cucumber-reporting</artifactId>
+            <version>3.8.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.4.7</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.vimalselvam/testng-extentsreport -->
+        <dependency>
+            <groupId>com.vimalselvam</groupId>
+            <artifactId>testng-extentsreport</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+
+        <!--<dependency>
+            <groupId>com.vimalselvam</groupId>
+            <artifactId>cucumber-extentsreport</artifactId>
+            <version>3.1.1</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.7</version>
+        </dependency>
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>3.0.0-M4</version>
+            <type>maven-plugin</type>
+        </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>2.13.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>2.13.0</version>
+            </dependency>
+ <!--       <dependency>
+            <groupId>com.github.mkolisnyk</groupId>
+            <artifactId>cucumber-report-generator</artifactId>
+            <version>1.3.3</version>
+            <scope>test</scope>
+        </dependency>-->
+    <!--    &lt;!&ndash; https://mvnrepository.com/artifact/com.github.mkolisnyk/cucumber-runner &ndash;&gt;
+        <dependency>
+            <groupId>com.github.mkolisnyk</groupId>
+            <artifactId>cucumber-runner</artifactId>
+            <version>1.0.8</version>
+        </dependency>
+        &lt;!&ndash; https://mvnrepository.com/artifact/org.freemarker/freemarker &ndash;&gt;
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.29</version>
+        </dependency>-->
+
+    </dependencies>
+
+    <build>
+<!--
+        <pluginManagement> lock down plugins versions to avoid using Maven defaults (may be moved to parent pom)
+-->
+            <plugins>
+                <plugin>
+                    <groupId>net.masterthought</groupId>
+                    <artifactId>maven-cucumber-reporting</artifactId>
+                    <version>3.15.0</version>
+                    <executions>
+                        <execution>
+                            <id>execution</id>
+                            <phase>test</phase>
+                            <goals>
+                                <goal>generate</goal>
+                            </goals>
+                            <configuration>
+                                <projectName>com.gce.lms.cucumbertest</projectName>  <!-- Replace with project name -->
+                                <outputDirectory>target/cucumber-reports/advanced-reports</outputDirectory>
+                                <jsonFiles>target/cucumber-reports/CucumberTestReport.json</jsonFiles>
+                                <buildNumber>1</buildNumber>
+                                <parallelTesting>false</parallelTesting>
+<!--
+                                <checkBuildResult>true</checkBuildResult>
+-->
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+                <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
+                <plugin>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+                <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
+                <plugin>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.0.2</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.0</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.0.0-M4</version>
+                    <configuration>
+                        <testFailureIgnore>true</testFailureIgnore>
+                        <systemProperties>
+                            <property>
+                                <name>Environment</name>
+                                <!--<value>${Environment}</value>-->
+                                <value>Test.properties</value>
+                            </property>
+                        </systemProperties>
+                        <suiteXmlFiles>
+                            <!-- TestNG suite XML files -->
+                            <suiteXmlFile>smokeSuite.xml</suiteXmlFile>
+                        </suiteXmlFiles>
+
+
+
+                        <properties>
+                            <property>
+                                <name>suitethreadpoolsize</name>
+                                <value>1</value>
+                            </property>
+                            <property>
+                                <name>listener</name>
+                                <value>
+<!--
+                                    com.LMS.listeners.ListenerTest
+-->
+                                </value>
+                            </property>
+                        </properties>
+
+                    </configuration>
+                </plugin>
+                <!-- Post-Man plugin -->
+                <plugin>
+                    <groupId>ch.fortysix</groupId>
+                    <artifactId>maven-postman-plugin</artifactId>
+                    <executions>
+                        <execution>
+
+                            <id>send a mail</id>
+                            <phase>test</phase>
+                            <goals>
+                                <goal>send-mail</goal>
+                            </goals>
+                            <inherited>true</inherited>
+
+                            <configuration>
+
+                                <!-- From Email address -->
+                                <from>rajni.ranjan@clairvoyantsoft.com</from>
+
+                                <!--  Email subject -->
+                                <subject>GCE-Test Automation Report#-${maven.build.timestamp}</subject>
+
+                                <!-- Fail the build if the mail doesnt reach -->
+                                <failonerror>true</failonerror>
+
+                                <!-- host -->
+                                <mailhost>smtp.gmail.com</mailhost>
+                                <!-- port of the host -->
+                                <mailport>465</mailport>
+                                <mailssl>true</mailssl>
+                                <mailAltConfig>true</mailAltConfig>
+
+                                <!-- Email Authentication(USername and Password) -->
+                                <mailuser>prekitautotest@gmail.com</mailuser>
+                                <mailpassword>portaltest</mailpassword>
+
+                                <receivers>
+                                    <!-- To Email address -->
+                                    <receiver>rajni.ranjan@clairvoyantsoft.com</receiver>
+                                </receivers>
+
+                                <fileSets>
+                                    <fileSet>
+                                        <!-- Report directory Path -->
+                                        <directory>target/surefire-reports/</directory>
+                                        <includes>
+                                            <!-- Report file name -->
+                                            <include>emailable-report.html</include>
+                                        </includes>
+                                        <!-- Use Regular Expressions like **/*.html if you want all the html files to send-->
+                                    </fileSet>
+                                </fileSets>
+
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.6.1</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>3.0.2</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>2.5.2</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>2.8.2</version>
+                </plugin>
+                <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
+                <plugin>
+                    <artifactId>maven-site-plugin</artifactId>
+                    <version>3.7.1</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-project-info-reports-plugin</artifactId>
+                    <version>3.0.0</version>
+                </plugin>
+            </plugins>
+        <!--</pluginManagement>-->
+    </build>
+</project>

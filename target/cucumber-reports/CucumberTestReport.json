@@ -1,0 +1,306 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 11474581500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User open the browser",
+            "match": {
+              "location": "GenericStep.userOpenTheBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9152106400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigates to GCE homepage",
+            "match": {
+              "location": "GenericStep.userNavigatesToGCEHomepage()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 19,
+            "value": "##@externaldata@./src/main/resources/datasheets/testData.xlsx@Sheet1"
+          }
+        ],
+        "line": 20,
+        "name": "Mandatory field validation on Contact Page",
+        "description": "",
+        "id": "enter-contact-details-on-gce-contact-page;mandatory-field-validation-on-contact-page;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 91415700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Clicks on Contact Menu on HomePage",
+            "match": {
+              "location": "testFeatureStep.userClicksOnContactMenuOnHomePage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 820107700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "enter details in contact form \"Rajni Ranjan\",\"rajni.ranjan@clairvoyantsoft.com\",\"4322305947\",\"Clairvoyant\",\"Other\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Rajni Ranjan",
+                  "offset": 31
+                },
+                {
+                  "val": "rajni.ranjan@clairvoyantsoft.com",
+                  "offset": 46
+                },
+                {
+                  "val": "4322305947",
+                  "offset": 81
+                },
+                {
+                  "val": "Clairvoyant",
+                  "offset": 94
+                },
+                {
+                  "val": "Other",
+                  "offset": 108
+                }
+              ],
+              "location": "ContactPageSteps.enterDetailsInContactForm(String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2105352100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks on submit button",
+            "match": {
+              "location": "ContactPageSteps.userClicksOnSubmitButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 61826100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "validate the error message \"This field is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "This field is required.",
+                  "offset": 28
+                }
+              ],
+              "location": "ContactPageSteps.validateTheErrorMessage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 765206800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "close the browser",
+            "match": {
+              "location": "GenericStep.closeTheBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9756144300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User open the browser",
+            "match": {
+              "location": "GenericStep.userOpenTheBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8990474800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigates to GCE homepage",
+            "match": {
+              "location": "GenericStep.userNavigatesToGCEHomepage()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "Mandatory field validation on Contact Page",
+        "description": "",
+        "id": "enter-contact-details-on-gce-contact-page;mandatory-field-validation-on-contact-page;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 76602100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Clicks on Contact Menu on HomePage",
+            "match": {
+              "location": "testFeatureStep.userClicksOnContactMenuOnHomePage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 683864300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "enter details in contact form \"Test name\",\"abc@gmail.com\",\"1234567890\",\"abc company\",\"Investor Relations\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test name",
+                  "offset": 31
+                },
+                {
+                  "val": "abc@gmail.com",
+                  "offset": 43
+                },
+                {
+                  "val": "1234567890",
+                  "offset": 59
+                },
+                {
+                  "val": "abc company",
+                  "offset": 72
+                },
+                {
+                  "val": "Investor Relations",
+                  "offset": 86
+                }
+              ],
+              "location": "ContactPageSteps.enterDetailsInContactForm(String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2088832900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user clicks on submit button",
+            "match": {
+              "location": "ContactPageSteps.userClicksOnSubmitButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 63603200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "validate the error message \"This field is required.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "This field is required.",
+                  "offset": 28
+                }
+              ],
+              "location": "ContactPageSteps.validateTheErrorMessage(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 747756100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "close the browser",
+            "match": {
+              "location": "GenericStep.closeTheBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Enter contact details on GCE contact Page",
+    "description": "",
+    "id": "enter-contact-details-on-gce-contact-page",
+    "keyword": "Feature",
+    "uri": "SmokeFeature/GCEcontactPageFeature.feature"
+  }
+]
